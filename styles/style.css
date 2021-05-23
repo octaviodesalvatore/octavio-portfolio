@@ -460,10 +460,23 @@ nav {
 
 /* Section contact me */
 
+.contact-me-section {
+  padding: 120px 0;
+}
+
+.contact-me-section h2 {
+  text-align: center;
+  font-size: 54px;
+  font-weight: 600;
+}
+
 .contactForm {
-  width: 40%;
+  width: 100%;
   padding: 40px;
   background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .contactForm h2 {
@@ -512,10 +525,12 @@ nav {
 
 .contactForm .inputBox input[type="submit"] {
   width: 100px;
+
   background: #951717;
   border: none;
   cursor: pointer;
   padding: 10px;
   font-size: 18px;
   color: #fff;
+  border-radius: 8px;
 }
