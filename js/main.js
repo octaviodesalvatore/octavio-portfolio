@@ -35,6 +35,37 @@ window.addEventListener("load", function () {
   });
 });
 
-window.onbeforeunload = function () {
-  window.scrollTo(0, 0);
-};
+// window.onbeforeunload = function () {
+//   window.scrollTo(0, 0);
+// };
+
+$(document).ready(function () {
+  $(".submit").click(function (event) {
+    let email = $(".email").val();
+    let subject = $(".subject").val();
+    let message = $(".message").val();
+    let statusElm = $(".status");
+    statusElm.empty();
+
+    if (email.length > 5 && email.includes("@") && email.includes(".")) {
+      statusElm.append("<div>Email es valido</div>");
+    } else {
+      statusElm.append("<div>Email no es valido</div>");
+      event.preventDefault();
+    }
+
+    if (subject.length >= 2) {
+      statusElm.append("<div>Subject es valido</div>");
+    } else {
+      statusElm.append("<div>Subject no es valido</div>");
+      event.preventDefault();
+    }
+
+    if (message.length >= 10) {
+      statusElm.append("<div>Mensaje es valido</div>");
+    } else {
+      statusElm.append("<div>Mensaje no es valido</div>");
+      event.preventDefault();
+    }
+  });
+});
