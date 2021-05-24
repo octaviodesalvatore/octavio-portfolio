@@ -4,6 +4,16 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+@media screen and (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
 ul li {
   list-style-type: none;
   list-style: none;
@@ -12,6 +22,9 @@ ul li {
 body {
   color: #000000;
   font-family: "Open Sans", sans-serif;
+}
+a {
+  text-decoration: none;
 }
 
 /* Nav */
