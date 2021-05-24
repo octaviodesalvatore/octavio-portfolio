@@ -20,15 +20,15 @@
       href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Caveat:wght@400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="./styles/nav.css" />
     <title>O.DeSalvatore</title>
   </head>
   <body>
-    <header>
+    <!-- <header>
       <nav class="center-container">
         <ul>
           <li class="nav-list">
             <div class="logo-container">
-              <!-- <img src="./img/logo.png" alt="" /> -->
               <p>octavio.</p>
             </div>
             <div class="span-container-nav">
@@ -40,14 +40,41 @@
           </li>
         </ul>
       </nav>
+    </header> -->
+    <header id="header">
+      <div class="nav-container">
+        <div class="center-nav">
+          <div class="logo-container" id="home-top">
+            <p>octavio.</p>
+          </div>
+
+          <nav class="desktop-nav">
+            <a href="#home-top" class="underlineRed">Home</a>
+            <a href="#about-me-section" class="underlineRed">About me</a>
+            <a href="##my-work" class="underlineRed">Projects</a>
+            <a href="#contact-me-section" class="contact-me">Contact Me</a>
+          </nav>
+          <button class="hamburger">
+            <div class="bar"></div>
+          </button>
+        </div>
+      </div>
     </header>
+
+    <nav class="mobile-nav">
+      <a href="#home-top" class="underlineRed disable">Home</a>
+      <a href="#about-me-section" class="underlineRed disable">About me</a>
+      <a href="##my-work" class="underlineRed disable">Projects</a>
+      <a href="#contact-me-section" class="contact-me disable">Contact Me</a>
+    </nav>
+
     <section class="hero">
       <div class="hero-container">
         <h1>¡Hola Mundo!</h1>
-        <h2>
+        <p>
           Soy Desarollador Web, apasionado con lo que hago y siempre queriendo
           aprender algo nuevo.
-        </h2>
+        </p>
         <img class="avatar" src="./img/image3.svg" alt="" />
       </div>
       <div class="hero-foot">
@@ -58,7 +85,7 @@
         />
       </div>
     </section>
-    <section class="about-me-section">
+    <section class="about-me-section" id="about-me-section">
       <div class="about-me-container">
         <h3>Soy Octavio, un gusto en conocerte</h3>
         <p>
@@ -170,9 +197,11 @@
         </div>
       </div>
     </section>
-    <section class="recent-work">
+    <section class="recent-work" id="#my-work">
       <div class="recent-work-container center-container">
-        <h2>Mis trabajos</h2>
+        <div class="work-title">
+          <h2>Mis trabajos</h2>
+        </div>
         <div class="work-container">
           <div class="work">
             <img src="./img/work1.PNG" alt="Trabajo 1" />
@@ -257,7 +286,7 @@
         </div>
       </div>
     </section>
-    <section class="contact-me-section">
+    <section class="contact-me-section" id="contact-me-section">
       <div class="center-container">
         <div class="contact-me-container">
           <div class="cv-container">

@@ -25,17 +25,12 @@ body {
 }
 a {
   text-decoration: none;
+  color: #000;
 }
 
 /* Nav */
 
-/* header {
-  background-color: #5e3eda;
-  background-color: #492fc9;
-  background-color: #ffffff65;
-} */
-
-nav {
+/* nav {
   height: 80px;
   font-size: 18px;
 }
@@ -96,16 +91,11 @@ nav {
 .about-me-btn:hover::after {
   width: 100%;
 }
-/* .about-me-btn:hover {
-  transition: all 200ms ease-in-out;
-  color: #ffffff;
-  background-color: black;
-} */
 
 .contact-me:hover {
   background-color: #951717;
   color: #fff;
-}
+} */
 
 /* Hero */
 
@@ -124,7 +114,7 @@ nav {
 }
 
 .hero-container h1,
-.hero-container h2 {
+.hero-container p {
   margin-bottom: 1.5rem;
 }
 
@@ -132,7 +122,7 @@ nav {
   font-size: 48px;
 }
 
-.hero-container h2 {
+.hero-container p {
   font-size: 24px;
   font-weight: 400;
 }
@@ -356,6 +346,23 @@ nav {
   color: #fff;
   margin-bottom: 3rem;
   font-size: 32px;
+  position: relative;
+  display: inline-block;
+}
+
+.recent-work-container h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  width: 0;
+  background-color: #fffefe;
+}
+
+.recent-work-container h2:hover::after {
+  width: 100%;
+  transition: ease-in-out 300ms width;
 }
 
 .work-container {
@@ -594,4 +601,33 @@ nav {
 
 .status {
   position: absolute;
+}
+
+@media (max-width: 768px) {
+  .contact-me-container {
+    flex-direction: column-reverse;
+  }
+
+  .contactForm .inputBox input[type="submit"] {
+    width: 100%;
+  }
+
+  .status {
+    display: none;
+  }
+
+  .about-me-container {
+    width: unset;
+    padding-right: 40px;
+    padding-left: 40px;
+  }
+
+  .hero-container {
+    padding: 4.5rem 0rem;
+  }
+}
+
+.work-title {
+  display: flex;
+  justify-content: center;
 }
