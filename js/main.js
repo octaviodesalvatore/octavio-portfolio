@@ -55,9 +55,9 @@ $(document).ready(function () {
     }
 
     if (subject.length >= 2) {
-      statusElm.append("<div>Subject es valido</div>");
+      statusElm.append("<div>Asunto es valido</div>");
     } else {
-      statusElm.append("<div>Subject no es valido</div>");
+      statusElm.append("<div>Asunto no es valido</div>");
       event.preventDefault();
     }
 

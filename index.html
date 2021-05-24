@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="shortcut icon" type="image/png" href="/img/favicon.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
@@ -256,62 +257,65 @@
     </section>
     <section class="contact-me-section">
       <div class="center-container">
-        <div class="content">
-          <h2>Contáctame</h2>
-        </div>
+        <div class="contact-me-container">
+          <div class="cv-container">
+            <button>Descargar CV</button>
+          </div>
 
-        <div class="container"></div>
+          <div class="content">
+            <h2>Contáctame</h2>
+            <div class="contactForm">
+              <form
+                action="https://formsubmit.co/octaviodesalvatore@gmail.com"
+                method="POST"
+              >
+                <h3>Enviar un mensaje</h3>
+                <div class="inputBox">
+                  <input
+                    type="text"
+                    name="name"
+                    required="required"
+                    autocomplete="name"
+                  />
+                  <span>Nombre completo</span>
+                </div>
 
-        <div class="contactForm">
-          <form
-            action="https://formsubmit.co/octaviodesalvatore@gmail.com"
-            method="POST"
-          >
-            <h2>Enviar un mensaje</h2>
-            <div class="inputBox">
-              <input
-                type="text"
-                name="name"
-                required="required"
-                autocomplete="name"
-              />
-              <span>Nombre completo</span>
-            </div>
+                <div class="inputBox">
+                  <input
+                    type="text"
+                    name="email"
+                    required="required"
+                    autocomplete="email"
+                    class="email"
+                  />
+                  <span>Email</span>
+                </div>
 
-            <div class="inputBox">
-              <input
-                type="text"
-                name="email"
-                required="required"
-                autocomplete="email"
-                class="email"
-              />
-              <span>Email</span>
-            </div>
+                <div class="inputBox">
+                  <input
+                    type="text"
+                    name="subject"
+                    required="required"
+                    class="subject"
+                  />
+                  <span>Asunto</span>
+                </div>
 
-            <div class="inputBox">
-              <input
-                type="text"
-                name="subject"
-                required="required"
-                class="subject"
-              />
-              <span>Asunto</span>
+                <div class="inputBox">
+                  <textarea
+                    required="required"
+                    class="message"
+                    name="message"
+                  ></textarea>
+                  <span>Escribe tu mensaje...</span>
+                </div>
+                <div class="inputBox">
+                  <input type="submit" class="submit" name="" value="Enviar" />
+                  <div class="status"></div>
+                </div>
+              </form>
             </div>
-
-            <div class="inputBox">
-              <textarea
-                required="required"
-                class="message"
-                name="message"
-              ></textarea>
-              <span>Escribe tu mensaje...</span>
-            </div>
-            <div class="status"></div>
-            <div class="inputBox">
-              <input type="submit" class="submit" name="" value="Enviar" />
-            </div>
-          </form>
+          </div>
         </div>
       </div>
     </section>
