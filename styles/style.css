@@ -714,3 +714,13 @@ footer {
   transition: 100ms color linear;
   background-color: rgb(97, 19, 19);
 }
+
+@media (max-width: 540px) {
+  .footer-container a i {
+    color: #fff;
+    margin: 0 7px;
+    font-size: 26px;
+    padding: 12px;
+    border-radius: 50%;
+  }
+}
