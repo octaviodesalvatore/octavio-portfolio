@@ -674,3 +674,20 @@ a {
     padding: 60px 0;
   }
 }
+
+footer {
+  padding: 28px 0;
+  background-color: #951717;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-container a i {
+  color: #fff;
+  margin: 0 20px;
+  font-size: 30px;
+}
