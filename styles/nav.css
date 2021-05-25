@@ -50,7 +50,7 @@ header {
   outline: none;
   border: none;
   z-index: 99;
-  top: 32px;
+  /* top: 32px; */
   right: 36px;
   position: fixed;
 }
@@ -155,7 +155,7 @@ header {
 
 /* */
 
-@media (min-width: 768px) {
+@media (min-width: 1025px) {
   .mobile-nav {
     display: none;
   }
@@ -165,7 +165,7 @@ header {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   nav {
     display: none;
   }
