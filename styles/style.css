@@ -563,6 +563,7 @@ a {
   font-size: 18px;
   color: #fff;
   border-radius: 8px;
+  box-shadow: 2px 4px 8px rgb(72 69 69 / 85%);
 }
 
 .contactForm .inputBox input[type="submit"]:hover {
@@ -587,6 +588,7 @@ a {
   font-weight: 500;
   letter-spacing: 2px;
   cursor: pointer;
+  box-shadow: 2px 4px 8px rgb(72 69 69 / 85%);
 }
 
 .cv-container button:hover {
@@ -703,9 +705,12 @@ footer {
   color: #fff;
   margin: 0 20px;
   font-size: 30px;
+  padding: 12px;
+  border-radius: 50%;
 }
 
 .footer-container a i:hover {
-  color: rgb(175, 175, 175);
+  color: rgb(255, 255, 255);
   transition: 100ms color linear;
+  background-color: rgb(97, 19, 19);
 }
